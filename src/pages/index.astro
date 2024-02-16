@@ -1,10 +1,12 @@
 ---
 import Layout from "../Layout/Layout.astro";
-import Actions from "../components/Actions.astro";
+import Overview from "../components/Overview.astro";
+import Menu from "../components/Menu.astro";
 ---
 
 <Layout>
-  <main class="max-w-md" client:visible>
-    <Actions />
+  <main class="grid max-w-md gap-2" client:visible>
+    <Overview />
+    <Menu />
   </main>
 </Layout>
