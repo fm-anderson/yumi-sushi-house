@@ -2,11 +2,13 @@
 import Layout from "../Layout/Layout.astro";
 import Overview from "../components/Overview.astro";
 import Menu from "../components/Menu.astro";
+import Featured from "../components/Featured.astro";
 ---
 
 <Layout>
-  <main class="grid max-w-md gap-2" client:visible>
+  <main class="flex h-full max-w-md flex-col gap-2" client:visible>
     <Overview />
+    <Featured />
     <Menu />
   </main>
 </Layout>
